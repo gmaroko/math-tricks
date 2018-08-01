@@ -1,4 +1,4 @@
-def main():
+def func():
     from itertools import combinations_with_replacement as c
     TARGET = 17
     numbers = set(range(TARGET, 1, -1))
@@ -22,4 +22,4 @@ def main():
     assert len(true_sums) == TARGET
     print("Agreed")
 
-main()
+func()
