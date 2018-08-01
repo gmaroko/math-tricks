@@ -27,4 +27,12 @@ def func():
             temp = temp+str(i)+'+'
         print("{} = {}".format(temp[:len(temp)-1], TARGET))
     print("\nCount: {}\nAgreed".format(len(true_sums)))
-func()
+
+if __name__ =="__main__":
+    from timeit import Timer
+    exe_time = Timer("func()", setup="from __main__ import func")
+    print("Execution time: {}s".format(round(exe_time.timeit(1), 4)))
+
+
+
+    
