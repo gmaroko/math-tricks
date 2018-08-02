@@ -32,7 +32,3 @@ if __name__ =="__main__":
     from timeit import Timer
     exe_time = Timer("func()", setup="from __main__ import func")
     print("Execution time: {}s".format(round(exe_time.timeit(1), 4)))
-
-
-
-    
