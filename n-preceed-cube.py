@@ -9,7 +9,9 @@ def isprime(n, r):
         return True
     else:
         return False
+
 trials = 10000
+
 def func():
     import math
     global trials
@@ -25,4 +27,9 @@ def func():
 if __name__ == "__main__":
     import timeit
     t = timeit.Timer("func()", setup="from __main__ import func")
-    print("Execution time: {}s\nNumbers tried: {}".format(round(t.timeit(1), 4), trials))
+    print("Execution time: {}s\nTrials: {}".format(round(t.timeit(1),4),trials))
+
+
+
+
+    
